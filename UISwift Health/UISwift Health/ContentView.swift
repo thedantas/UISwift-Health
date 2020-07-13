@@ -16,7 +16,14 @@ struct ContentView: View {
         healthStore = HealthStore()
     }
     var body: some View {
-        Text("Hello, World!")
+        Text("Hello, World!").padding()
+            .onAppear{
+                if let healthStore = self.healthStore {
+                    healthStore.requestAuthorization{ success in
+                        
+                    }
+                }
+        }
     }
 }
 

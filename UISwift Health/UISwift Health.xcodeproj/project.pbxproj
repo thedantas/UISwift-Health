@@ -17,6 +17,7 @@
 		50B3E18F24BCFAE7000665C8 /* UISwift_HealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3E18E24BCFAE7000665C8 /* UISwift_HealthTests.swift */; };
 		50B3E19A24BCFAE7000665C8 /* UISwift_HealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3E19924BCFAE7000665C8 /* UISwift_HealthUITests.swift */; };
 		50B3E1A824BCFB5D000665C8 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B3E1A724BCFB5D000665C8 /* HealthStore.swift */; };
+		50B3E1AC24BD00C7000665C8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B3E1AB24BD00C7000665C8 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		50B3E19924BCFAE7000665C8 /* UISwift_HealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwift_HealthUITests.swift; sourceTree = "<group>"; };
 		50B3E19B24BCFAE7000665C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B3E1A724BCFB5D000665C8 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		50B3E1A924BD00C7000665C8 /* UISwift Health.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "UISwift Health.entitlements"; sourceTree = "<group>"; };
+		50B3E1AB24BD00C7000665C8 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B3E1AC24BD00C7000665C8 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +91,7 @@
 				50B3E18D24BCFAE7000665C8 /* UISwift HealthTests */,
 				50B3E19824BCFAE7000665C8 /* UISwift HealthUITests */,
 				50B3E17224BCFAE5000665C8 /* Products */,
+				50B3E1AA24BD00C7000665C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +108,7 @@
 		50B3E17324BCFAE5000665C8 /* UISwift Health */ = {
 			isa = PBXGroup;
 			children = (
+				50B3E1A924BD00C7000665C8 /* UISwift Health.entitlements */,
 				50B3E17424BCFAE5000665C8 /* AppDelegate.swift */,
 				50B3E17624BCFAE5000665C8 /* SceneDelegate.swift */,
 				50B3E1A724BCFB5D000665C8 /* HealthStore.swift */,
@@ -140,6 +146,14 @@
 				50B3E19B24BCFAE7000665C8 /* Info.plist */,
 			);
 			path = "UISwift HealthUITests";
+			sourceTree = "<group>";
+		};
+		50B3E1AA24BD00C7000665C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50B3E1AB24BD00C7000665C8 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "UISwift Health/UISwift Health.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UISwift Health/Preview Content\"";
 				DEVELOPMENT_TEAM = 3PQUV6XQ9K;
@@ -462,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "UISwift Health/UISwift Health.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UISwift Health/Preview Content\"";
 				DEVELOPMENT_TEAM = 3PQUV6XQ9K;
